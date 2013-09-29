@@ -2,7 +2,6 @@ used = []
 used_products = []
 sum = 0
 (1..9).map(&:to_s).permutation.each do |p|
-  puts p.inspect
   (1..7).each do |a|
     ((a+1)..8).each do |b|
       multiplicand = p[0...a].join('').to_i
